@@ -11,3 +11,8 @@ class Solution:
                 n = n//10
 
         return digit
+    
+    '''
+    TC : O(logN + 1)
+    SC : O(1)
+    '''
