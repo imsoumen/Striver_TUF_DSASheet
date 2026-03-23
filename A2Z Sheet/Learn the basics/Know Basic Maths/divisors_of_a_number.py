@@ -17,13 +17,15 @@ import math
 class Solution:
     def divisors(self, n):
         ans = []
+        
+        sq = int(math.sqrt(n))
 
-        for i in range(1, math.sqrt(n)+1):
+        for i in range(1, sq+1):
             if n%i == 0:
                 ans.append(i)
 
-            if i != n // i:
-                ans.append(n // i)
+                if i != n // i:
+                    ans.append(n // i)
         
         ans.sort()
         
